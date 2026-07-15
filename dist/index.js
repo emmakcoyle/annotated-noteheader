@@ -3758,11 +3758,11 @@ var NoteHeader_default = (() => {
     const kind = String(fileData.frontmatter?.kind ?? "");
     const title = String(fileData.frontmatter?.title ?? fileData.slug ?? "");
     const sectionMap = {
-      source: ["Sources", "/sources"],
-      idea: ["Ideas", "/ideas"],
-      publication: ["Publications", "/publications"]
+      source: ["Sources", "./sources"],
+      idea: ["Ideas", "./ideas"],
+      publication: ["Publications", "./publications"]
     };
-    const [sectionLabel, sectionHref] = sectionMap[type] ?? ["Home", "/"];
+    const [sectionLabel, sectionHref] = sectionMap[type] ?? ["Home", "./"];
     return /* @__PURE__ */ u2("div", { class: "page-header-mini", children: [
       /* @__PURE__ */ u2("svg", { width: "0", height: "0", style: "position:absolute", children: /* @__PURE__ */ u2("defs", { children: /* @__PURE__ */ u2("filter", { id: "roughen-soft-mini", x: "-50%", y: "-50%", width: "200%", height: "200%", children: [
         /* @__PURE__ */ u2("feTurbulence", { type: "fractalNoise", baseFrequency: "0.02 0.06", numOctaves: "3", seed: "7", result: "noise" }),
@@ -3797,13 +3797,13 @@ var NoteHeader_default = (() => {
         /* @__PURE__ */ u2("circle", { cx: "334", cy: "118", r: "2", fill: "#c99a2e", opacity: "0.32", filter: "url(#roughen-soft-mini)" })
       ] }),
       /* @__PURE__ */ u2("p", { class: "eyebrow", children: "an interdisciplinary research archive" }),
-      /* @__PURE__ */ u2("a", { href: "/", class: "masthead-mini", style: "font-family:'MyHand','Fraunces',serif;font-weight:normal;", children: "Annotated" }),
+      /* @__PURE__ */ u2("a", { href: "./", class: "masthead-mini", style: "font-family:'MyHand','Fraunces',serif;font-weight:normal;", children: "Annotated" }),
       /* @__PURE__ */ u2("svg", { class: "rule-double", viewBox: "0 0 880 12", preserveAspectRatio: "none", style: "height:8px;", children: [
         /* @__PURE__ */ u2("path", { d: "M2 6 Q40 2 90 7 T190 5 T290 8 T390 4 T490 7 T590 5 T690 8 T790 4 T878 6", fill: "none", stroke: "#23555f", "stroke-width": "1.3", "stroke-linecap": "round", opacity: "0.35", transform: "translate(1.6,-1)" }),
         /* @__PURE__ */ u2("path", { d: "M2 6 Q40 2 90 7 T190 5 T290 8 T390 4 T490 7 T590 5 T690 8 T790 4 T878 6", fill: "none", stroke: "#8c2f22", "stroke-width": "1.3", "stroke-linecap": "round", opacity: "0.8" })
       ] }),
       /* @__PURE__ */ u2("p", { class: "crumb-trail", children: [
-        /* @__PURE__ */ u2("a", { href: "/", children: "Home" }),
+        /* @__PURE__ */ u2("a", { href: "./", children: "Home" }),
         /* @__PURE__ */ u2("span", { children: "/" }),
         /* @__PURE__ */ u2("a", { href: sectionHref, children: sectionLabel }),
         /* @__PURE__ */ u2("span", { children: "/" }),
