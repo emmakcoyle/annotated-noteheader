@@ -3769,15 +3769,15 @@ var NoteHeader_default = (() => {
         /* @__PURE__ */ u2("a", { href: "./", class: "masthead-mini", style: "font-family:'MyHand','Fraunces',serif; font-weight:normal;", children: "Annotated" }),
         /* @__PURE__ */ u2("img", { src: "./static/underline-thick-gold.png", class: "pencil-rule-mini", alt: "" })
       ] }),
+      /* @__PURE__ */ u2("h1", { class: "note-page-title", children: title }),
+      kind ? /* @__PURE__ */ u2("p", { class: "note-kind-label", children: kind }) : null,
       /* @__PURE__ */ u2("p", { class: "crumb-trail", children: [
         /* @__PURE__ */ u2("a", { href: "./", children: "Home" }),
         /* @__PURE__ */ u2("span", { children: "/" }),
         /* @__PURE__ */ u2("a", { href: sectionHref, children: sectionLabel }),
         /* @__PURE__ */ u2("span", { children: "/" }),
         title
-      ] }),
-      /* @__PURE__ */ u2("h1", { class: "note-page-title", children: title }),
-      kind ? /* @__PURE__ */ u2("p", { class: "section-label", children: kind }) : null
+      ] })
     ] });
   };
   return NoteHeader;

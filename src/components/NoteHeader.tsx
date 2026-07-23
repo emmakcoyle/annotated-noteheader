@@ -23,12 +23,12 @@ export default (() => {
           <a href="./" class="masthead-mini" style="font-family:'MyHand','Fraunces',serif; font-weight:normal;">Annotated</a>
           <img src="./static/underline-thick-gold.png" class="pencil-rule-mini" alt="" />
         </div>
+        <h1 class="note-page-title">{title}</h1>
+        {kind ? <p class="note-kind-label">{kind}</p> : null}
         <p class="crumb-trail">
           <a href="./">Home</a><span>/</span>
           <a href={sectionHref}>{sectionLabel}</a><span>/</span>{title}
         </p>
-        <h1 class="note-page-title">{title}</h1>
-        {kind ? <p class="section-label">{kind}</p> : null}
       </div>
     )
   }
