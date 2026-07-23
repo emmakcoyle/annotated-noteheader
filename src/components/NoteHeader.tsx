@@ -27,7 +27,8 @@ export default (() => {
           <a href="./">Home</a><span>/</span>
           <a href={sectionHref}>{sectionLabel}</a><span>/</span>{title}
         </p>
-        {kind ? <p class="section-label" style="justify-content:center; border:none;">{kind}</p> : null}
+        {kind ? <p class="section-label">{kind}</p> : null}
+        <h1 class="note-page-title">{title}</h1>
       </div>
     )
   }

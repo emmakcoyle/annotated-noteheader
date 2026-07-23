@@ -3776,7 +3776,8 @@ var NoteHeader_default = (() => {
         /* @__PURE__ */ u2("span", { children: "/" }),
         title
       ] }),
-      kind ? /* @__PURE__ */ u2("p", { class: "section-label", style: "justify-content:center; border:none;", children: kind }) : null
+      kind ? /* @__PURE__ */ u2("p", { class: "section-label", children: kind }) : null,
+      /* @__PURE__ */ u2("h1", { class: "note-page-title", children: title })
     ] });
   };
   return NoteHeader;
